@@ -3,6 +3,7 @@ var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var minify = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
@@ -23,6 +24,7 @@ gulp.task('html', function() {
 gulp.task('sass', function() {
     return gulp.src(css)
         .pipe(sass())
+        .pipe(minify())
         .pipe(gulp.dest('static/css'))
 });
 
