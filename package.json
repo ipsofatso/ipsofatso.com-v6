@@ -22,9 +22,10 @@
     },
     "version": "1.0.0",
     "devDependencies": {
-        "gulp-browserify": "~0.5.1",
         "gulp": "~3.9.0",
+        "gulp-browserify": "~0.5.1",
         "gulp-batch": "~1.0.5",
+        "gulp-clean-css": "~1.0.2",
         "gulp-concat": "~2.6.0",
         "gulp-filesize": "~0.0.6",
         "gulp-react": "~3.1.0",
