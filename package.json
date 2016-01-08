@@ -1,13 +1,16 @@
 {
-    "name": "ipsofatso.com",
+    "name": "ipsofatso.com v6",
+    "version": "1.0.0",
+    "author": "Ben Garcia",
     "description": "a too complicated for a static site, aka ipsofatso.com",
+    "homepage": "http://www.ipsofatso.com",
+    "license": "Artistic-2.0",
     "main": "app.js",
     "scripts": {
         "build": "gulp build",
         "start": "node app.js"
     },
     "dependencies": {
-        "async": "~0.9.0",
         "browserify-zepto": "~1.1.4",
         "express": "~4.13.3",
         "lodash": "~3.10.1",
@@ -20,14 +23,12 @@
     "engines": {
         "node": ">=0.8.x"
     },
-    "version": "1.0.0",
     "devDependencies": {
         "gulp": "~3.9.0",
         "gulp-browserify": "~0.5.1",
         "gulp-batch": "~1.0.5",
         "gulp-clean-css": "~1.0.2",
         "gulp-concat": "~2.6.0",
-        "gulp-filesize": "~0.0.6",
         "gulp-react": "~3.1.0",
         "gulp-sass": "~2.1.1",
         "gulp-uglify": "~1.5.1",
@@ -35,8 +36,6 @@
         "gulp-watch": "~4.3.5",
         "reactify": "~1.1.1"
     },
-    "author": "ben garcia",
-    "license": "ISC",
     "browserify": {
         "transform": ["reactify"]
     }
