@@ -33,7 +33,7 @@ gulp.task('js', function() {
             insertGlobals : true,
             debug : true
         }))
-        //.pipe(uglify().on('error', gutil.log))
+        .pipe(uglify().on('error', gutil.log))
         .pipe(gulp.dest('static/js'))
 });
 
