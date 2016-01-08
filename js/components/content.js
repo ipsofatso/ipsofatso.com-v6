@@ -9,7 +9,7 @@ var Content = React.createClass({
     render: function() {
         return (
             <Tabs>
-                <Tabs.Panel title='Landing'>
+                <Tabs.Panel title='Clear'>
                     <div></div>
                 </Tabs.Panel>
 

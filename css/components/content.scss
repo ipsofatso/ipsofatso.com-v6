@@ -36,7 +36,7 @@
                         }
                     }
 
-                    &:first-child {
+                    &.is-active:first-child {
                         // is dummy tab named 'landing' hide it.
                         display: none;
                     }
