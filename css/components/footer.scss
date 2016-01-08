@@ -1,0 +1,10 @@
+#footer {
+    .copywrite {
+        position: fixed;
+        bottom: 0.15rem;
+        left: 0.25rem;
+        z-index: 2;
+        color: $white;
+        @include vendor-prefix(text-shadow, 0 0 0.1rem $black);
+    }
+}
