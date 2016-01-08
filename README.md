@@ -1,5 +1,5 @@
 # ipsofatso.com v6
-A quick project made with Node, React, Gulp and SASS.
+A quick project - my portfolio site - made with Node, React, Gulp and SASS.
 ## Installation
 1. Download
 2. `npm install`
