@@ -1,0 +1,42 @@
+// available fonts
+$press-start: 'Press Start 2P', cursive;
+$share-tech: 'Share Tech Mono';
+
+// colors
+$black: #000;
+$dark-gray: #363636;
+$med-gray: #777;
+$light-gray: #dedede;
+$x-light-gray: #eaeaea;
+$white: #fff;
+$light-blue: #B2FFFF;
+
+
+@mixin vendor-prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+    }
+    #{$property}: #{$value};
+}
+
+
+// core
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $share-tech;
+    font-size: 12px;
+    background: $light-blue;
+}
+
+
+// addt'l sheets
+@import 'components/about';
+@import 'components/content';
+@import 'components/cv';
+@import 'components/gallery';
+@import 'components/image_modal';
+@import 'components/tiled_background';
+@import 'components/top_bar';

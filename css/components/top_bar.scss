@@ -1,0 +1,36 @@
+#top_bar {
+    background: $dark-gray;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 10;
+    @include vendor-prefix(box-shadow, 0.25rem 0.25rem 1rem $med-gray);
+
+    img {
+        width: 2rem;
+        @include vendor-prefix(transform, rotate(-45deg) scale(2) translate(0.1rem, -0.35rem));
+        opacity: 0.5;
+    }
+
+    h1,
+    h2 {
+        font-family: $press-start;
+        display: inline-block;
+    }
+
+    h1 {
+        color: $light-blue;
+        font-size: 2rem;
+        letter-spacing: -0.2rem;
+        margin: 0 0.5rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: -0.05rem;
+        color: $light-blue;
+        opacity: 0.25;
+        margin: 0;
+    }
+}

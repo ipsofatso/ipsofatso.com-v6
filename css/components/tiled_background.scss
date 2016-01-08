@@ -1,0 +1,36 @@
+#tiled_background {
+    position: fixed;
+    top: 0rem;
+    right: -7rem;
+    bottom: -7rem;
+    left: 0rem;
+    overflow: hidden;
+    z-index: 1;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block;
+            float: left;
+            overflow: hidden;
+            opacity: 0.5;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+            @include vendor-prefix(transition, all 1000ms ease-out);
+
+            &:hover {
+                z-index: 2;
+                opacity: 1;
+                @include vendor-prefix( transform, scale(1.5) translateX(-0.12rem) translateY(-0.12rem) );
+                @include vendor-prefix(box-shadow, 0.25rem 0.25rem 0.5rem $med-gray);
+                @include vendor-prefix(transition, all 125ms ease-out);
+            }
+        }
+    }
+}

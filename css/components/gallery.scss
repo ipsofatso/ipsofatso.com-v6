@@ -1,0 +1,20 @@
+.gallery {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: block;
+            float: left;
+            width: 15rem;
+            height: 15rem;
+            margin: 0 1rem 1rem 0;
+            background-size: cover;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

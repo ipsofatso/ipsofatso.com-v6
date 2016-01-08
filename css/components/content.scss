@@ -1,0 +1,98 @@
+#content {
+    .tabs {
+        position: relative;
+
+        .tabs-navigation {
+            position: fixed;
+            top: 2rem;
+            right: 0.5rem;
+            z-index: 10;
+
+            .tabs-menu {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin: 0 0.5rem 0 0;
+
+                    a {
+                        color: $light-gray;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $light-blue;
+                        }
+                    }
+
+                    &.is-active {
+                        border-bottom: solid 2px $light-blue;
+
+                        a {
+                            cursor: default;
+                            color: $light-blue;
+                        }
+                    }
+
+                    &:first-child {
+                        // is dummy tab named 'landing' hide it.
+                        display: none;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        article {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: visible;
+            z-index: 5;
+
+            div div {
+                display: none;
+
+                &.article,
+                &.gallery {
+                    display: inherit;
+                    overflow: auto;
+                    position: absolute;
+                    top: 4.5rem;
+                    width: 45%;
+                    background: #fff;
+                    padding: 1rem;
+                    min-height: 10rem;
+                    @include vendor-prefix(border-radius, 0.25rem);
+                    @include vendor-prefix(box-shadow, 0.25rem 0.25rem 1rem $med-gray);
+
+                    &.h_left {
+                        right: inherit;
+                        left: 0.5rem;
+                    }
+
+                    &.h_center {
+                        left:50%;
+                        margin-left: -22.5%;
+                    }
+
+                    &.h_right {
+                        right: 0.5rem;
+                        left: inherit;
+                    }
+                }
+
+                &.gallery {
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
