@@ -1,0 +1,67 @@
+@media (max-width: 550px) {
+    #top_bar {
+        h1,
+        h2 {
+            vertical-align: top;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    #content {
+        .tabs {
+            .tabs-navigation {
+                left: 3rem;
+                right: inherit;
+                font-size: 1rem;
+            }
+
+            article {
+                div {
+                    div.article,
+                    div.gallery {
+                        position: fixed;
+                        top: 3.5rem;
+                        bottom: 0.5rem;
+                        width: inherit;
+                        height: inherit !important;
+
+                        &[class*="h_"] {
+                            right: 0.5rem;
+                            left: 0.5rem;
+                            margin: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery ul li {
+        width: auto;
+        float: none;
+        margin: 0 auto 1rem;
+    }
+
+    .image_modal .modal_content {
+        width: 90%;
+        box-sizing: border-box;
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
