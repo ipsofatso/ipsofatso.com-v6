@@ -7,10 +7,13 @@
         li {
             display: block;
             float: left;
-            width: 15rem;
+            width: 32.33%;
             height: 15rem;
-            margin: 0 1rem 1rem 0;
+            padding: 0 1% 1% 0;
             background-size: cover;
+            background-clip: content-box;
+            background-position: center;
+            box-sizing: content-box;
 
             &:last-child {
                 margin: 0;

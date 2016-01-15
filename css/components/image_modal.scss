@@ -17,7 +17,12 @@
         @include vendor-prefix(border-radius, 0.25rem);
         @include vendor-prefix(box-shadow, 0.25rem 0.25rem 0.5rem $black);
 
-        img {}
+        img {
+            display: block;
+            max-height: 95%;
+            max-width: 95%;
+            margin: 0 auto;
+        }
 
         a[data-rm-close] {
             display: block;
