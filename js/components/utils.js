@@ -13,7 +13,7 @@ var utils = {
         return possiblePositions[randomIndex];
     },
     determineArticleHeight: function() {
-        return Math.ceil( $(window).height() / 2 );
+        return Math.ceil( $(window).height() / 1.5 );
     },
 };
 
